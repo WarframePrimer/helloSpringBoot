@@ -1,0 +1,15 @@
+#application.yaml
+#server settings(ServerProperties)
+server:
+  port: 8080
+  address: 127.0.0.1
+  session:
+    timeout: 30
+  context-path: /hellospringboot
+#Tomcat properties
+  tomcat:
+    accesslog:
+      enabled: false
+    protocol-header: x-forwarded-proto
+    basedir:
+    background-processor-delay: 30 #secs
